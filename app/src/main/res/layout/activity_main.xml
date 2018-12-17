@@ -11,8 +11,8 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="#eee"
-        android:divider="#eee"
-        android:dividerHeight="5dp"
+        android:divider="#09182F"
+        android:dividerHeight="1dp"
         android:longClickable="true"
 
 

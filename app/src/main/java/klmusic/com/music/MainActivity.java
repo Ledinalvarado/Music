@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         items = new String[canciones.size()];
         for (int i = 0 ; i<canciones.size();i++ ){
-            items[i]= canciones.get(i).getName().toString().replace(".mp4"," ").replace(".mp3"," ").toLowerCase();
+            items[i]= canciones.get(i).getName().toString().replace(".m4a","").replace(".mp3","").toLowerCase();
 
         }
 
@@ -58,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
                 canciones.addAll(EncontrarCanciones(lista));
 
             }else{
-                if (lista.getName().endsWith(".mp4")|| lista.getName().endsWith(".mp3") ){
+                if (lista.getName().toString().endsWith(".m4a")|| lista.getName().toString().endsWith(".mp3") ){
                     canciones.add(lista);
                 }
             }
