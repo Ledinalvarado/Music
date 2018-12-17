@@ -73,19 +73,23 @@
         android:id="@+id/tv_tiempo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#eee"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="320dp"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toStartOf="@+id/tv_tiempoFinal"
+        app:layout_constraintStart_toStartOf="@+id/seekBar"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="26dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_tiempoFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="#eee"
+        android:layout_marginEnd="20dp"
+        android:textColor="#FFF"
+        app:layout_constraintEnd_toEndOf="@+id/seekBar"
         app:layout_constraintTop_toBottomOf="@+id/seekBar"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="308dp" />
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/nombre"
